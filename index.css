@@ -1,0 +1,769 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: lavender;
+    overflow-x: hidden;
+    font-family: "Poppins", sans-serif;
+    font-optical-sizing: auto;
+   
+}
+main{
+    height: auto;
+}
+nav{
+    height: 100px;
+    background-color: 	#677de0;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    margin-left: 120px;
+
+}
+.logo h1{
+  font-size: 3rem;
+  color:black;
+}
+.navbar{
+    margin-right: 60px;
+    display: flex;
+}
+.logo img{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+ul{
+    display: flex;
+    list-style-type: none;
+    margin-right: 120px;
+
+}
+li{
+    margin: 20px;
+}
+ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+  
+}
+ul li a:hover{
+  text-decoration: underline;
+  transition: all 1s;
+ 
+
+}
+
+
+.menu i{
+    /* margin-top: 30px; */
+    display: none;
+}
+.close i{
+    display: none;
+}
+
+/* ***** container ****** */
+
+.container{
+   
+    height: auto;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    justify-content: space-between;
+   
+    
+}
+.left{
+  
+    width: 50%;
+    height: auto;
+    padding-top: 80px;
+    margin-left: 120px;
+}
+.right{
+   
+    width: 50%;
+    margin-right: 120px;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+    
+}
+.left h1{
+    padding-top: 20px;
+    font-size: 2.5rem;
+}
+.left h1 #name{
+    color: rgb(51, 51, 223);
+}
+.left h2{
+    padding-top: 10px;
+    font-size: 1.7rem;
+}
+.left p{
+    padding-top: 30px;
+    font-size: 1.2rem;
+    line-height: 35px;
+    color: #333;
+    
+}
+.left h1{
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid rgb(28, 153, 237); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .10em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(20, end),
+      blink-caret .75s step-end infinite;
+  }
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(16, 206, 244); }
+  }
+.btn{
+    height: 65px;
+    width: 210px;
+    margin-top: 75px;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    background-color: #7B68EE;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+.right img{
+    width: 60vw;
+    height: 80vh;
+}
+
+
+
+/* container 2 */
+.mobile{
+    display: none;
+}
+
+.container2{
+   
+    height: auto;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+
+    
+}
+
+.container2 h2{
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top: 40px;
+    
+}
+.card-component{
+    margin-left: 120px;
+    margin-right: 120px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+.card{
+    border: 1px solid black;
+    height: auto;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+    padding-bottom: 60px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px 2px rgb(52, 52, 63);
+    transition:  all 0.4s;
+    transform: scaleY(30deg);
+}
+.card:hover{
+    box-shadow: 2px 2px 10px 2px rgb(0, 0, 0);
+    
+
+}
+.card img{
+    
+    height: 80px;
+    width: 80px;
+   margin-top: 10%;
+   margin-left: 40%;
+    border-radius: 50%;
+}
+.card h3{
+ text-align: center;
+ margin-top: 20px;
+ font-size: 1.4rem;
+}
+.card p{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.02em;
+    color: #333;
+    
+}
+
+
+
+
+/* *****container3 ****** */
+.container3{
+  height: auto;
+  width: 100%;
+    
+}
+  .p1{
+    background-image: url("images/project\ 1.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .p2{
+    background-image: url("images/project\ 2.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .p3{
+    background-image: url("images/images\ \(2\).png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .p4{
+    background-image: url("images/project4.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .p5{
+    background-image: url("images/project5.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .p6{
+    background-image: url("images/project6.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .p7{
+    background-image: url("images/project7.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .p8{
+    background-image: url("images/project8.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .container3 h2{
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  .card-inner{
+  
+    height: auto;
+    
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  .project{
+    
+    height:25vh;
+    width: 20vw;
+    border-radius: 20px;
+  }
+  .project:hover{
+    box-shadow: 1px 1px 5px 2px gray;
+  }
+
+/* about me */
+
+.container4{
+    /* background-color: rgb(143, 189, 223); */
+    width: 100%;
+    height: auto;
+    margin-bottom: 40px;
+    
+}
+.container4 h2{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 40px;
+}
+.about-container{
+   
+  margin: 0 auto;
+    height: 70vh;
+    width: 83vw;
+    margin-top: 80px;
+    display: flex;
+    gap: 10px;
+}
+.about{
+   
+    width: 50%;
+    height: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.about img{
+    height: 50vh;
+    width: 40vw;
+    margin-left: -60px;
+}
+.about h4{
+    color:rgb(51, 51, 223) ;
+    font-size: 3rem;
+    letter-spacing: 5px;
+    font-weight: bolder;
+    padding-top: 30px;
+}
+.about p{
+    padding-top: 30px;
+    font-size: 1.2rem;
+    line-height: 30px;
+}
+.btn2{
+    height: 8vh;
+    width: 10vw;
+    font-size: 1.2rem;
+    letter-spacing: 5px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-color: #7B68EE;
+    color:white;
+    font-weight: bolder;
+    cursor: pointer;
+    margin-top: 60px;
+    
+}
+.btn2:hover{
+    box-shadow: 1px 1px 5px 2px gray;
+}
+.open{
+  display: none;
+  background-color: #6d9197;
+  
+}
+
+
+
+/* *** progress bar ***** */
+
+
+.skils h2{
+    text-align: center;
+    font-size: 2.5rem;
+}
+.container5{
+    
+    width: 100%;
+    height:auto;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 120px;
+    padding-right: 120px;
+    align-items: center;
+    gap: 10px;
+   margin-bottom: 50px;
+   margin-top: 100px;
+}
+.progress_box{
+    /* border: 1px solid black; */
+    height: 260px;
+    width: 300px;
+    display: grid;
+    place-items:center ;
+    /* box-shadow: 1px 1px 5px 2px gray; */
+    
+}
+.progress-bar {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background: conic-gradient(#1cdcac 0deg, #93f34a 360deg);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .progress-bar::before{
+    content: " ";
+    position: relative;
+    height: 150px;
+    width: 150px;
+    background-color: rgb(207, 100, 234);
+    border-radius: 50%;
+    
+  }
+  .value-container {
+    position: absolute;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+  }
+  .progress_box .txt{
+    font-weight: bolder;
+    font-size: 1.5rem;
+  }
+
+/* *** contact us **** */
+
+.container6 h2{
+ font-size: 2.5rem;
+ text-align: center;
+
+}
+.contact{
+    
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+   box-shadow: 1px 1px 5px 2px #4B0082;
+   margin-bottom: 50px;
+   padding-bottom: 20px;
+   
+}
+
+.contact div label{
+    font-size: 1.5rem;
+    margin-top: 40px;
+}
+.contact div input{
+    margin-top: 40px;
+    width: 30vw;
+    height: 50px;
+    border-radius: 20px;
+}
+.contact div textarea{
+    margin-top: 40px;
+    width: 30vw;
+    height: 80px;
+    border-radius: 20px;
+}
+
+.contact div{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    margin-right: 20%;
+    margin-left: 20%;
+   
+}
+
+#btn3{
+    text-align: center;
+   display: flex;
+   justify-content: center;
+   margin: auto;
+   margin-top: 50px;
+   padding:20px;
+   height: 60px;
+   width: 150px;
+   font-size: 1.3rem;
+   letter-spacing: 5px;
+   background-color: rgb(85, 85, 222);
+   color: white;
+   font-weight: bold;
+   border: none;
+   outline: none;
+   border-radius: 10px;
+   cursor: pointer;
+
+}
+
+#btn3:hover{
+    box-shadow: 1px 1px 5px 2px gray;
+}
+
+/* footer */
+.container7{
+    
+    background-color: #677de0;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 20%;
+    padding-right: 10%;
+    padding-bottom: 40px;
+}
+.footer-box{
+   
+    height: auto;
+    width: 32vw;
+}
+.footer-box img{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+.footer-box a i{
+    font-size: 30px;
+    margin: 20px;
+    color: black;
+    
+}
+.footer-box a i:hover{
+  color: white;
+}
+.footer-box ol{
+    list-style-type: none;
+ 
+  }
+  .footer-box ol li{
+    margin: 20px;
+  }
+  .footer-box ol li a{
+    color: black;
+    font-size: 1.2rem;
+    text-decoration: none;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:706px){
+    nav{
+        height: 80px;
+        
+    }
+   
+  
+    ul{
+        flex-direction: column;
+        position: fixed;
+        left: -10%;
+        top: -100%;
+        margin-top: 40px;
+        transition: all 1s;
+        z-index: 2;
+        background-color: #4B0082;
+        width: 80%;
+        padding-left: 30%;
+        
+        border-bottom-right-radius: 20px;
+        
+    }
+    .menu i{
+        display: block;
+        font-size: 2.4rem;
+        transition: all 1s;
+    }
+    .show{
+       
+        top: 10%;
+    }
+    .close i{
+        display: block;
+        font-size: 2.4rem;
+    }
+    .dis{
+        display: none;
+    }
+   .logo{
+    margin-left: 10px;
+   }
+
+    /* main section */
+   
+    .container{
+        display: block;
+    }
+    .mobile{
+        display: block;
+       
+    }
+    .right{
+        display: none;
+        margin-right: 0px;
+    }
+    .left{
+        width: 100%;
+        margin-left: 0px;
+    }
+    .left p{
+        text-align: center;
+        font-size: 1.1rem;
+    }
+    .left h1{
+        font-size: 2em;
+        text-align: center;
+    }
+    .left h1,h2{
+        text-align: center;
+    }
+   .btn{
+    height: 60px;
+    width: 160px;
+    font-size: 1rem;
+    position: relative;
+    left: 28%;
+   }
+
+   /* ****container2 */
+   .card-component{
+    flex-direction: column;
+  
+    margin-left: 0px;
+    margin-right: 0px;
+   padding: 10px 10px;
+   }
+   .card{
+    width: 80vw;
+    margin: 0 auto;
+    
+   }
+
+   /* ***container3 **** */
+   .container3{
+    width: 100%;
+    margin-left: 10px;
+   }
+   .card-inner{
+    display: block;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+    margin: 0 auto;
+    
+   }
+   .project{
+    width: 80vw;
+   margin-top: 20px;
+   margin-left: 20px;
+   }
+
+   /* ****container4 *** */
+   .container4{
+    height: 1230px;
+    background:none;
+   }
+   .about-container{
+    display: block;
+    width: 100vw;
+    height: 100vh;
+   }
+   .about{
+    width: 100%;
+   }
+   .about h4{
+    text-align: center;
+   }
+   .about img{
+    margin-left: 50px;
+    width: 60vw;
+   }
+   .about p{
+    text-align: center;
+    font-size: 1.1rem;
+    
+   }
+   .btn2{
+    width: 40vw;
+    margin-left: 75px;
+    
+   }
+   
+   .container5{
+    display: block;
+    height: auto;
+    padding-left: 10%;
+   
+ 
+   
+   }
+  .progress_box{
+    margin-top: 10%;
+  }
+
+  /* contact us */
+  .contact{
+    width: 90%;
+  }
+  .contact div{
+    display: block;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .contact div label{
+    font-size: 1.3rem;
+    margin-top: 0px;
+  }
+  .contact div input{
+    width: 100%;
+    height: 50px;
+  }
+  .contact div textarea{
+    width: 100%;
+    height: 50px;
+  }
+
+  /* foter */
+  .container7{
+    
+    height: 700px;
+    display: block;
+  }
+   .footer-box ol{
+    list-style-type: none;
+ 
+  }
+  .footer-box ol li{
+    margin: 20px;
+  }
+  .footer-box ol li a{
+    color: black;
+    font-size: 1.2rem;
+    text-decoration: none;
+  }
+  .b3{
+    display: flex;
+  }
+  
+  
+}
